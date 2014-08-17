@@ -10,9 +10,7 @@ js/
 config/
 admin974/
 themes/default
-themes/PRS020041*
-themes/simpleresponsivetheme_bak
-crawlprotect/
 log/
 upload/
 localization/
+/nbproject/private/

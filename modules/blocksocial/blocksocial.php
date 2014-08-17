@@ -33,7 +33,7 @@ class blocksocial extends Module
 	{
 		$this->name = 'blocksocial';
 		$this->tab = 'front_office_features';
-		$this->version = '1.1.2';
+		$this->version = '1.1.3';
 		$this->author = 'PrestaShop';
 
 		$this->bootstrap = true;
@@ -52,6 +52,7 @@ class blocksocial extends Module
 			Configuration::updateValue('BLOCKSOCIAL_YOUTUBE', '') && 
 			Configuration::updateValue('BLOCKSOCIAL_GOOGLE_PLUS', '') && 
 			Configuration::updateValue('BLOCKSOCIAL_PINTEREST', '') && 
+			Configuration::updateValue('BLOCKSOCIAL_VIMEO', '') &&
 			$this->registerHook('displayHeader') && 
 			$this->registerHook('displayFooter'));
 	}
@@ -64,7 +65,8 @@ class blocksocial extends Module
 			Configuration::deleteByName('BLOCKSOCIAL_RSS') AND 
 			Configuration::deleteByName('BLOCKSOCIAL_YOUTUBE') AND 
 			Configuration::deleteByName('BLOCKSOCIAL_GOOGLE_PLUS') AND 
-			Configuration::deleteByName('BLOCKSOCIAL_PINTEREST') AND 
+			Configuration::deleteByName('BLOCKSOCIAL_PINTEREST') AND
+			Configuration::deleteByName('BLOCKSOCIAL_VIMEO') AND
 			parent::uninstall());
 	}
 	
@@ -80,6 +82,7 @@ class blocksocial extends Module
 			Configuration::updateValue('BLOCKSOCIAL_YOUTUBE', Tools::getValue('blocksocial_youtube', ''));
 			Configuration::updateValue('BLOCKSOCIAL_GOOGLE_PLUS', Tools::getValue('blocksocial_google_plus', ''));
 			Configuration::updateValue('BLOCKSOCIAL_PINTEREST', Tools::getValue('blocksocial_pinterest', ''));
+			Configuration::updateValue('BLOCKSOCIAL_VIMEO', Tools::getValue('blocksocial_vimeo', ''));
 			$this->_clearCache('blocksocial.tpl');
 			Tools::redirectAdmin($this->context->link->getAdminLink('AdminModules').'&configure='.$this->name.'&tab_module='.$this->tab.'&conf=4&module_name='.$this->name);
 		}
@@ -102,6 +105,7 @@ class blocksocial extends Module
 				'youtube_url' => Configuration::get('BLOCKSOCIAL_YOUTUBE'),
 				'google_plus_url' => Configuration::get('BLOCKSOCIAL_GOOGLE_PLUS'),
 				'pinterest_url' => Configuration::get('BLOCKSOCIAL_PINTEREST'),
+				'vimeo_url' => Configuration::get('BLOCKSOCIAL_VIMEO'),
 			));
 
 		return $this->display(__FILE__, 'blocksocial.tpl', $this->getCacheId());
@@ -126,7 +130,7 @@ class blocksocial extends Module
 						'type' => 'text',
 						'label' => $this->l('Twitter URL'),
 						'name' => 'blocksocial_twitter',
-						'desc' => $this->l('Your official Twitter accounts.'),
+						'desc' => $this->l('Your official Twitter account.'),
 					),
 					array(
 						'type' => 'text',
@@ -142,15 +146,21 @@ class blocksocial extends Module
 					),
 					array(
 						'type' => 'text',
-						'label' => $this->l('Google Plus URL:'),
+						'label' => $this->l('Google+ URL:'),
 						'name' => 'blocksocial_google_plus',
-						'desc' => $this->l('You official Google Plus page.'),
+						'desc' => $this->l('Your official Google+ page.'),
 					),
 					array(
 						'type' => 'text',
 						'label' => $this->l('Pinterest URL:'),
 						'name' => 'blocksocial_pinterest',
 						'desc' => $this->l('Your official Pinterest account.'),
+					),
+					array(						
+						'type' => 'text',						
+						'label' => $this->l('Vimeo URL:'),						
+						'name' => 'blocksocial_vimeo',						
+						'desc' => $this->l('Your official Vimeo account.'),					
 					),
 				),
 				'submit' => array(
@@ -187,6 +197,7 @@ class blocksocial extends Module
 			'blocksocial_youtube' => Tools::getValue('blocksocial_youtube', Configuration::get('BLOCKSOCIAL_YOUTUBE')),
 			'blocksocial_google_plus' => Tools::getValue('blocksocial_google_plus', Configuration::get('BLOCKSOCIAL_GOOGLE_PLUS')),
 			'blocksocial_pinterest' => Tools::getValue('blocksocial_pinterest', Configuration::get('BLOCKSOCIAL_PINTEREST')),
+			'blocksocial_vimeo' => Tools::getValue('blocksocial_vimeo', Configuration::get('BLOCKSOCIAL_VIMEO')),
 		);
 	}
 

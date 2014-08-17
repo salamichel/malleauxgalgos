@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+        <module>
+            <name>psblog</name>
+            <displayName><![CDATA[Prestablog]]></displayName>
+            <version><![CDATA[2.3]]></version>
+            <description><![CDATA[Blog module, articles, cat&eacute;gories, commentaires et produits associ&eacute;s]]></description>
+            <author><![CDATA[APPSIDE]]></author>
+            <tab><![CDATA[front_office_features]]></tab>
+	<confirmUninstall>êtes vous sûr de vouloir supprimer tous les articles du blog, catégories et commentaires ?</confirmUninstall>
+            <is_configurable>1</is_configurable>
+            <need_instance>0</need_instance>
+	<limited_countries></limited_countries>
+        </module>

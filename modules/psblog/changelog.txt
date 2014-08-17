@@ -1,0 +1,74 @@
+# 2014-03-29 Release 2.4
+Prestashop 1.6 compatibility
+
+# 2013-12-13 Release 2.3
+Tab Stats Feature
+Configuration tab
+Various optimisations
+Export feature
+
+# 2013-10-20 Release 2.2
+Featured block
+Block Positions improvements
+Default & featured categories
+Footer block
+Translate in admin with flags
+
+# 2013-10-20 Release 2.1
+All in one module instead 4
+fix lang problem 1.5.4
+Archives block
+Various optimisations
+Relations in one table (product, group, lang, category)
+Edit blog page Metas 
+Subcategories (admin, block, lists)
+Publish same article in several langs (lang filter)
+Category in breadcrumb
+Category customer group filter
+BO Lists improvements, new fields etc...
+Upgrade script (from 1.5)
+Display posts on footer
+
+# 2013-05-05 Release 1.5.2
+fix lang problem 1.5.4
+fix install problem 1.5.4
+
+# 2012-11-06 Release 1.5.1
+fix bug prefix lang table in category class
+fix bug pagination
+Add product image format configuration
+Add param to related product image link
+
+# 2012-10-31 Release 1.5
+Full 1.5 compatibility
+Sitemap xml
+multishop
+image positions
+many improvements
+
+# 2012-03-23 Release 1.4
+FO : search block
+FO : Related articles feature
+BO : Link articles to other articles
+FO : Various optimisations
+
+# 2012-01-26 Release 1.3
+FO : simplifying the implementation of the url rewriting (only one directive now)
+FO : New feature feed RSS
+FO : Share with Addthis 
+BO : Enable / disable categories
+BO : Manage categories positions 
+BO : Category new description & SEO fields 
+BO : New posts SEO fields 
+BO : New post images management, no need to create directories.
+
+# 2011-05-26 Release 1.2
+FO : Fix smarty get_template_vars call bug for some prestashop installation
+BO : WYSIWYG fix for PS 1.4.1
+
+# 2011-04-29 Release 1.1
+BO : PS < 1.4 Post edit, in comment list fix link Token error to see detail of comment. 
+FO : Fix bug count number of comment in article.
+FO : new htaccess rules for url rewriting
+
+# 2010-04-22 Release 1.0
