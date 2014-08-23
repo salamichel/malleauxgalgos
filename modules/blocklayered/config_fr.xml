@@ -2,7 +2,7 @@
 <module>
 	<name>blocklayered</name>
 	<displayName><![CDATA[Bloc navigation &agrave; facettes]]></displayName>
-	<version><![CDATA[2.0.0]]></version>
+	<version><![CDATA[2.0.1]]></version>
 	<description><![CDATA[Affiche un bloc avec les filtres de la navigation &agrave; facettes]]></description>
 	<author><![CDATA[PrestaShop]]></author>
 	<tab><![CDATA[front_office_features]]></tab>

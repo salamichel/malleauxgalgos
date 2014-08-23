@@ -2,7 +2,7 @@
 <module>
 	<name>blocktopmenu</name>
 	<displayName><![CDATA[Menu Haut horizontal]]></displayName>
-	<version><![CDATA[2.0.1]]></version>
+	<version><![CDATA[2.0.2]]></version>
 	<description><![CDATA[Ajouter un nouveau menu horizontal en haut de votre site e-commerce.]]></description>
 	<author><![CDATA[PrestaShop]]></author>
 	<tab><![CDATA[front_office_features]]></tab>

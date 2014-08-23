@@ -2,7 +2,7 @@
 <module>
 	<name>socialsharing</name>
 	<displayName><![CDATA[Partage sur les r&eacute;seaux sociaux]]></displayName>
-	<version><![CDATA[1.2.6]]></version>
+	<version><![CDATA[1.2.7]]></version>
 	<description><![CDATA[Affiche des boutons de partage sur les r&eacute;seaux sociaux (Twitter, Facebook, Google+ et Pinterest) sur chaque page produit.]]></description>
 	<author><![CDATA[PrestaShop]]></author>
 	<tab><![CDATA[advertising_marketing]]></tab>

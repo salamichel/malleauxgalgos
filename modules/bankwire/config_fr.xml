@@ -2,7 +2,7 @@
 <module>
 	<name>bankwire</name>
 	<displayName><![CDATA[Virement bancaire]]></displayName>
-	<version><![CDATA[1.0.0]]></version>
+	<version><![CDATA[1.0.1]]></version>
 	<description><![CDATA[Accepter les paiements par virement.]]></description>
 	<author><![CDATA[PrestaShop]]></author>
 	<tab><![CDATA[payments_gateways]]></tab>

@@ -2,7 +2,7 @@
 <module>
 	<name>statsequipment</name>
 	<displayName><![CDATA[Navigateurs web et syst&egrave;mes d&#039;exploitation]]></displayName>
-	<version><![CDATA[1.2.1]]></version>
+	<version><![CDATA[1.2.2]]></version>
 	<description><![CDATA[Ajoute un onglet contenant un graphique des navigateurs web et syst&egrave;mes d&#039;exploitation utilis&eacute;, dans le tableau de bord des statistiques.]]></description>
 	<author><![CDATA[PrestaShop]]></author>
 	<tab><![CDATA[analytics_stats]]></tab>

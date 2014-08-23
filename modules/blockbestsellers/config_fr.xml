@@ -2,7 +2,7 @@
 <module>
 	<name>blockbestsellers</name>
 	<displayName><![CDATA[Bloc meilleures ventes]]></displayName>
-	<version><![CDATA[1.5.5]]></version>
+	<version><![CDATA[1.5.7]]></version>
 	<description><![CDATA[Ajoute un bloc qui affiche les meilleures ventes de la boutique.]]></description>
 	<author><![CDATA[PrestaShop]]></author>
 	<tab><![CDATA[front_office_features]]></tab>
